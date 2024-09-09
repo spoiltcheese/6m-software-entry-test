@@ -13,6 +13,19 @@
 
 function swap(x, y){
     // Task 1: Add code here
+    let z = x;
+    x = y;
+    y = z;
+   
+    if(!isNaN(x)  && !isNaN(y) ){
+        console.log (x+","+y);
+        return 0;
+    }
+
+    else return -1;
 }
 
 // Task 2: Add code here
+
+swap("Apple", 10)
+swap(9, 17)

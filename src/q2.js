@@ -11,9 +11,18 @@
 
 
 // Task 1: Add code here
-
+const Patients = [];
+let i = 0;
 function addPatient(patientName){
     // Task 2: Add code here
+    Patients[i] = patientName;
+    i++;
+}
+
+function listPatient(){
+    for (let j = 0; j < i; j++){
+console.log(Patients[j] );
+    }
 }
 
 // Task 3: Add code here

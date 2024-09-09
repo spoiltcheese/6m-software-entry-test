@@ -14,7 +14,9 @@ The form of this function is using the arrow function format. It allows for shor
 
 Task 1: Modify this function to use object destructuring for the inputs to display only the first name and hobby properties of the object to the console:
 */
-const introduce = () => {
+const introduce = ({firstName, hobby}) => {
+  const message= "Hello, my name is " + firstName + " and I love " + hobby;
+  console.log (message);
 }
 
 introduce(person);
